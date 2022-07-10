@@ -7,14 +7,13 @@
 
 .footer-container {
   flex-wrap: wrap;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
   display: flex;
   align-items: baseline;
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    justify-content: space-between;
   }
 }
 .footer__logo {
@@ -24,25 +23,34 @@
     margin-right: 0;
     padding: 0;
   }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .address-footer {
+  text-align: center;
   margin-bottom: 60px;
 
-  @media screen and (min-width: 480px) {
-    text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 70px;
+    text-align: start;
+    margin-bottom: 0px;
   }
 }
 
 .social-footer {
-  margin-bottom: 60px;
-  margin-left: 70px;
+  text-align: center;
+  margin-left: 93px;
   margin-right: 93px;
+  margin-bottom: 60px;
 
-  @media screen and (min-width: 480px) {
-    text-align: center;
-    margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    margin-left: 0px;
     margin-right: 93px;
+    text-align: left;
   }
 }
 .footer__address {
@@ -79,6 +87,7 @@
   flex-direction: column;
 
   @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 .footer-subscribe__title {

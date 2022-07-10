@@ -72,6 +72,11 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 /* section-middle img фото работ */
@@ -91,20 +96,24 @@
 }
 
 .section-works__title {
-  margin-bottom: 50px;
-  color: var(--black-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+  display: none;
 
-  @media screen and (min-width: 480px) {
-    display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 50px;
+    color: var(--black-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 }
 .section-works--no-padding {
   padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .section-works__subtitle {

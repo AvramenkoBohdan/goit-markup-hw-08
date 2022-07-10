@@ -1,7 +1,8 @@
 .input-form {
   position: relative;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .title-input {
@@ -13,6 +14,14 @@
   color: var(--gray-subtitel-contacts);
   letter-spacing: 0.01em;
   margin-bottom: 4px;
+}
+
+.input-form__title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .input-form__input {
@@ -64,23 +73,35 @@
 .input-policy {
   display: block;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .input-policy__description {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.71;
+  font-size: 11px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--gray-subtitel-contacts);
   margin-right: 5px;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.71;
+    font-size: 12px;
+  }
 }
 .input-policy__link {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.71;
+  font-size: 11px;
+
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-
+  line-height: 1.17;
   color: var(--blue-accent);
+  @media screen and (min-width: 1200px) {
+    line-height: 1.71;
+    font-size: 12px;
+  }
 }

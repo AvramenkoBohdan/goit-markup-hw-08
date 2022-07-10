@@ -57,6 +57,7 @@
 
 .mob-menu__link {
   color: var(--black-text-color);
+  text-decoration: none;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -85,6 +86,7 @@
 
 .mob-contacts__link {
   color: var(--black-text-color);
+  text-decoration: none;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -112,6 +114,7 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .is-hidden {
