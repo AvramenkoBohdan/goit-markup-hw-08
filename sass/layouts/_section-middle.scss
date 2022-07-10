@@ -1,0 +1,128 @@
+/* Section-middle*/
+.section-middle__list {
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}
+.section-middle__item {
+  width: 450px;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.section-middle__item::before {
+  content: "";
+  display: block;
+
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+
+  padding: 25px 192px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    padding: 25px 144px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 25px 102px;
+  }
+}
+
+.section-middle__item--icon {
+  position: absolute;
+  top: 25px;
+  left: 192px;
+
+  @media screen and (min-width: 768px) {
+    top: 25px;
+    left: 144px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 25px;
+    left: 100px;
+  }
+}
+
+.section-middle__subtitle {
+  margin-bottom: 10px;
+  color: var(--black-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* section-middle img фото работ */
+.section-works__list {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.section-works__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.section-works__title {
+  margin-bottom: 50px;
+  color: var(--black-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
+.section-works--no-padding {
+  padding-top: 0px;
+}
+
+.section-works__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+
+  padding: 27px 82px;
+  width: 100%;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

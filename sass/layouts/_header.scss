@@ -1,0 +1,120 @@
+/* header */
+.page-header {
+  border-bottom: 1px solid #ececec;
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+/* Navigation */
+
+.site-nav__link {
+  color: var(--black-text-color);
+  text-decoration: none;
+}
+.site-nav__list {
+  display: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.site-nav__item {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--blue-accent);
+  }
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__link--current {
+  color: var(--blue-accent);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    display: block;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--blue-accent);
+  }
+}
+
+/* CONTACTS-HEADER */
+.contacts {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--gray-subtitel-contacts);
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    color: var(--blue-accent);
+  }
+}
+
+.contact__icon {
+  fill: currentColor;
+  margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,147 @@
+/* FOOTER*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+.footer__logo {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+.address-footer {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+}
+
+.social-footer {
+  margin-bottom: 60px;
+  margin-left: 70px;
+  margin-right: 93px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    margin-left: 93px;
+    margin-right: 93px;
+  }
+}
+.footer__address {
+  margin-bottom: 9px;
+
+  color: var(--main-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.footer__link {
+  padding-left: 0px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+.footer__item--email:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* ПОДПИСАТЬСЯ */
+
+.footer-subscribe {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+.footer-subscribe__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-subscribe__button {
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.footer-subscribe__field {
+  position: relative;
+}
+
+.footer-subscribe__email {
+  width: 450px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
+}
+
+.footer-subscribe__email:focus,
+.footer-subscribe__email:not(:placeholder-shown) {
+  border: 1px solid white;
+}
+.footer-subscribe__email:not(:placeholder-shown)
+  + .footer-subscribe__name--email {
+  opacity: 0;
+}
+
+.footer-subscribe__name--email {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}

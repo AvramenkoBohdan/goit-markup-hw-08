@@ -1,0 +1,56 @@
+/* Logo */
+.logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  min-width: 145px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+  color: var(--black-text-color);
+  font-family: "Raleway", sans-serif;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-weight: 700;
+    margin-right: 88px;
+    font-size: 24px;
+    line-height: 1.16;
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
+  &:focus {
+    color: var(--blue-accent);
+  }
+}
+.logo--accent {
+  color: var(--blue-accent);
+}
+
+/* LOGO FOOTER */
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--bcg-diff);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &:focus {
+    color: var(--blue-accent);
+  }
+}
+
+.footer__logo--accent {
+  color: var(--blue-accent);
+}

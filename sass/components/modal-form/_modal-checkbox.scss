@@ -1,0 +1,33 @@
+.input-policy {
+  display: flex;
+  align-items: center;
+}
+.input-policy__input {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .input-policy__icon {
+    background-color: var(--blue-accent);
+    border: #188ce8;
+  }
+  &:focus + .input-policy__icon {
+    border-color: var(--blue-accent);
+  }
+}
+
+.input-policy__icon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--black-text-color);
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.input-policy__checkbox {
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
